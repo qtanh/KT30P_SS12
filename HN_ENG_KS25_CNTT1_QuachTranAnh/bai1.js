@@ -16,6 +16,16 @@ function filterAndArrange (){
     })
 }
 filterAndArrange();
+function tagtag (){
+    let shownUp = products.filter((value)=>{
+        return value.category=="Phụ kiện";
+    })
+    let showArray = shownUp.forEach((value)=>{
+        return console.log(`name:${value.name}`);
+        
+    })
+}
+tagtag();
 function totalValue (){
     let result = products.filter((value)=>{
         return value.inStock==true;
